@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white3">
+	<LinearLayout
+       android:layout_width="fill_parent"
+  	   android:layout_height="45dp"
+  	   android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/title_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:onClick="chat_back"
+            android:background="@drawable/title_btn_back"
+		    />    
+        
+        <TextView
+            android:id="@+id/ivTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:text="我的消息"
+            android:textStyle="bold" />
+ 
+
+           <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mm_title_btn_contact_normal"
+				android:background="@drawable/title_btn_right"
+                android:gravity="center"
+                android:text=" 编辑 " 
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                /> 
+    </LinearLayout>
+ 	<!-- 系统消息endt -->
+    <ListView
+        android:id="@+id/my_notice_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+	     android:divider="#20ffffff"
+	     android:dividerHeight="1dp"
+     >
+    </ListView>
+
+</LinearLayout>
