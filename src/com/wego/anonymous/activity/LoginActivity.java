@@ -99,7 +99,7 @@ public class LoginActivity extends ActivitySupport {
 	
 	private void initXmppServer() {
 //		String xmppHost = StringUtil.doEmpty("115.28.163.135");
-		String xmppHost = StringUtil.doEmpty("10.10.10.139");
+		String xmppHost = StringUtil.doEmpty("115.28.190.123");
 		loginConfig.setXmppHost(xmppHost);
 		XmppConnectionManager.getInstance().init(loginConfig);
 		LoginActivity.this.saveLoginConfig(loginConfig);
